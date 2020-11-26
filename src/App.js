@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router";
+import Login from "./containers/Login/Login";
 import Support from "./containers/Support/Support";
 import WelcomeScreen from "./containers/WelcomeScreen/WelcomeScreen";
 
@@ -8,8 +9,8 @@ const App = () => {
       <Route path={"/support"}>
         <Support />
       </Route>
-      <Route path={"/next"}>
-        <div>NEXT</div>
+      <Route path={"/login"}>
+        <Login />
       </Route>
       <Route path={"/"} exact>
         <WelcomeScreen />
